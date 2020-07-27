@@ -1,0 +1,16 @@
+{
+  "status": 200,
+  "status text": "OK",
+  "message":  "All music retrieved.",
+  "data": [
+    {
+      "id": 1, "name": "Nirvana"
+    }, 
+    {
+      "id": 2, "name": "Rollins Band"
+    },
+    {
+      "id": 3, "name": "Jay Jay Johanson"
+    } 
+  ]
+}
