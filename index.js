@@ -1,27 +1,25 @@
-// Bring in the express server and create application
+// Express app
 let express = require('express');
 let app = express();
-let musicRepo = require('./repos/musicRepo')
+let musicRepo = require("./repos/musicRepo");
 
-// Use the express Router Object
+// Express Router Object
 let router = express.Router();
-let music = musicRepo.get();
+const music = musicRepo.get();
 
-// Create GET to return list of music
+// GET to return data 
 router.get('/', (req, res, next) => {
   res.status(200).json({
     "status": 200,
-    "status text": "OK",
-    "message":  "All music retrieved.",
-    "data": music,
-  });
+    "statusText": "ok",
+    "message": "All music retrieved",
+    "data": music
+  });  
 });
 
-// Configure router so all routes apre prefixed with /api/v1
 app.use('/api', router);
 
-// Create server to listen on port 5000
-const PORT = 5000;
-var server = app.listen(PORT, () => {
-  console.log(`Node server is listening on port ${PORT}...`);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server on port ${PORT}`);
 });
