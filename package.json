@@ -1,0 +1,23 @@
+{
+  "name": "90s-music-api",
+  "version": "1.0.0",
+  "description": "My 90s music API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bengabo/90s-music-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bengabo/90s-music-API/issues"
+  },
+  "homepage": "https://github.com/bengabo/90s-music-API#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
