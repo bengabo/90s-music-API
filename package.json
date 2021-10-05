@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bengabo/90s-music-API#readme",
   "dependencies": {
+    "heroku": "^7.59.0",
     "json-server": "^0.16.3"
   }
 }
